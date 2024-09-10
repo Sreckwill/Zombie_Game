@@ -31,8 +31,15 @@ public class AISensor : MonoBehaviour
     Mesh CreateWedgeMesh()
     {
         Mesh mesh = new Mesh();
-        int numTriangles
+        int numTriangles = 8;
+        int numVertices = numTriangles * 3;
 
-            return Mesh;
+
+        Vector3[] vertices = new Vector3[numVertices];
+
+        int[] triangles=new int[numVertices];
+
+        Vector3 bottomCenter=Vector3.zero;
+            return mesh;
     }
 }
