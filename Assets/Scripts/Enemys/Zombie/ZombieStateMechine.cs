@@ -1,11 +1,11 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class ZombieStateMechine : MonoBehaviour
 {
     private ZombieStates currentStates;
 
+    public float waitingTime;
     public float radius;
     [Range(0, 360)]
     public float angle;
@@ -16,17 +16,31 @@ public class ZombieStateMechine : MonoBehaviour
     public LayerMask obstructionMask;
 
     public bool canSeePlayer;
-   public  Collider[] rangeChecks;
+    public  Collider[] rangeChecks;
+
+    public Vector3 walkPoint;
+    public bool walkPointSet;
+    public float walkingPointrange;
+    public LayerMask ground;
+
+    public NavMeshAgent agent;
+    public Animator Animator;
 
     public FOVState FOVState;
-    public ZombieAttackiState AttackiState;
+    public ZombieMoveState MoveState;
+    public ZombieAttackState AttackState;
+
     // Start is called before the first frame update
     void Start()
     {
+        waitingTime = 0f;
         FOVState=new FOVState(this);
-        AttackiState=new ZombieAttackiState(this);
-        currentStates=FOVState;
+        MoveState = new ZombieMoveState(this);
+        AttackState = new ZombieAttackState(this);
+        currentStates = FOVState;
         currentStates?.EnterState();
+        agent = GetComponent<NavMeshAgent>();
+        Animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -42,5 +56,4 @@ public class ZombieStateMechine : MonoBehaviour
         currentStates?.EnterState();
     }
 
-   
 }

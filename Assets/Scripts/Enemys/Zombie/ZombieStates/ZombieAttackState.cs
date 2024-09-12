@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ZombieAttackiState : ZombieStates
+public class ZombieAttackState : ZombieStates
 {
-    public ZombieAttackiState(ZombieStateMechine stateMechine) : base(stateMechine)
+    public ZombieAttackState(ZombieStateMechine stateMechine) : base(stateMechine)
     {
     }
 
@@ -13,13 +13,15 @@ public class ZombieAttackiState : ZombieStates
         Debug.Log("Attack");
     }
 
+    public override void UpdateState()
+    {
+        
+    }
+
     public override void ExitState()
     {
         
     }
 
-    public override void UpdateState()
-    {
-        
-    }
+    
 }

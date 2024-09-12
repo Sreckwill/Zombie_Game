@@ -1,6 +1,4 @@
-
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class FOVState : ZombieStates
@@ -53,29 +51,31 @@ public class FOVState : ZombieStates
 
                 float distanceToTarget = Vector3.Distance(stateMechine.transform.position, target.position);
                 Debug.Log($"Distance to target: {distanceToTarget}");
-
+                stateMechine.SwitchStates(new ZombieAttackState(stateMechine));
                 if (!Physics.Raycast(stateMechine.transform.position, directionToTarget, distanceToTarget, stateMechine.obstructionMask))
                 {
                     Debug.Log("No obstruction detected, player is visible.");
                     stateMechine.canSeePlayer = true;
-                    stateMechine.SwitchStates(new ZombieAttackiState(stateMechine));
                 }
                 else
                 {
                     Debug.Log("Obstruction detected, player is not visible.");
                     stateMechine.canSeePlayer = false;
+                    SwitchToMoveState();
                 }
             }
             else
             {
                 Debug.Log("Target is outside field of view angle.");
                 stateMechine.canSeePlayer = false;
+                SwitchToMoveState();
             }
         }
         else if (stateMechine.canSeePlayer)
         {
             Debug.Log("No targets in range, player is no longer visible.");
             stateMechine.canSeePlayer = false;
+            SwitchToMoveState();
         }
     }
 
@@ -99,6 +99,11 @@ public class FOVState : ZombieStates
             Gizmos.color = Color.green;
             Gizmos.DrawLine(stateMechine.transform.position, stateMechine.rangeChecks[0].transform.position);
         }
+    }
+
+    private void SwitchToMoveState()
+    {
+        stateMechine.SwitchStates(new ZombieMoveState(stateMechine));
     }
 
 }
