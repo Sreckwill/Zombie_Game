@@ -14,8 +14,19 @@ public class AISensor : MonoBehaviour
     public Color meshColor = Color.red;
     public int scanFrequnecy = 30;
     public LayerMask layers;
+    public LayerMask occlusionLayers;
 
+    public List<GameObject>  Objects
+    {
+        get
+        {
+            objects.RemoveAll(obj => !obj);
+            return objects;
+        }
+    }
 
+    private List<GameObject> objects = new List<GameObject>();
+  
     Collider[] colliders=new Collider[50];
     Mesh mesh;
     int count;
@@ -42,6 +53,15 @@ public class AISensor : MonoBehaviour
     private void Scan()
     {
         count = Physics.OverlapSphereNonAlloc(transform.position, distance, colliders, layers, QueryTriggerInteraction.Collide);
+        objects.Clear();
+        for(int i = 0; i < count; ++i)
+        {
+            GameObject obj = colliders[i].gameObject;
+            if (IsInSight(obj))
+            {
+                objects.Add(obj);
+            }
+        }
     }
 
     Mesh CreateWedgeMesh()
@@ -136,7 +156,29 @@ public class AISensor : MonoBehaviour
         return mesh;
     }
 
-
+    public bool IsInSight(GameObject obj)
+    {
+        Vector3 origin = transform.position;
+        Vector3 dest = obj.transform.position;
+        Vector3 direction = dest - origin;
+        if (direction.y < 0 || direction.y > height)
+        {
+            return false;
+        }
+        direction.y = 0;
+        float deltaAngle=Vector3.Angle(direction, transform.forward);
+        if (deltaAngle > angle)
+        {
+            return false;
+        }
+        origin.y += height / 2;
+        dest.y = origin.y;
+        if(Physics.Linecast(origin, dest,occlusionLayers))
+        {
+            return false;
+        }
+        return true;
+    }
 
     private void OnValidate()
     {
@@ -155,5 +197,11 @@ public class AISensor : MonoBehaviour
         {
             Gizmos.DrawSphere(colliders[i].transform.position, 0.2f);
         }
+        Gizmos.color = Color.green;
+        foreach (var obj in objects)
+        {
+            Gizmos.DrawSphere(obj.transform.position, 0.2f);
+        }
+
     }
 }
