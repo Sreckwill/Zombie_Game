@@ -6,22 +6,28 @@ using UnityEngine;
 
 public class AimStateManager : MonoBehaviour
 {
+    public AimBaseState currState;
+    public HipFireState Hip = new HipFireState();
+    public AimState Aim = new AimState();
+    
     [SerializeField] private float mouseSense = 1;
     private float xAxis, yAxis;
+    [HideInInspector] public Animator anim;
 
     [SerializeField] public Transform canFollowPos;
-    // Start is called before the first frame update
-    void Start()
+
+    private void Start()
     {
-        
+        anim = GetComponentInChildren<Animator>();
+        SwitchState(Hip);
     }
 
-    // Update is called once per frame
     void Update()
     {
         xAxis += Input.GetAxisRaw("Mouse X")*mouseSense;
         yAxis += Input.GetAxisRaw("Mouse Y")*mouseSense;
         yAxis = Math.Clamp(yAxis, -80, 80);
+        currState.UpdateState(this);
     }
 
     private void LateUpdate()
@@ -29,5 +35,14 @@ public class AimStateManager : MonoBehaviour
         canFollowPos.localEulerAngles =
             new Vector3(yAxis, canFollowPos.localEulerAngles.y, canFollowPos.localEulerAngles.z);
         transform.eulerAngles = new Vector3(transform.eulerAngles.x, xAxis, transform.eulerAngles.z);
+    }
+
+    public void SwitchState(AimBaseState state)
+    {
+        currState = state;
+        currState.EnterState(this);
+        currState.EnterState(this);
+            
+
     }
 }
