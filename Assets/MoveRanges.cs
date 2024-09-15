@@ -8,11 +8,15 @@ public class MoveRanges : MonoBehaviour
     public float walkingPointrange;
     public LayerMask ground;
 
+
+    private Animator animator;
     private NavMeshAgent agent;
     // Start is called before the first frame update
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
+        animator = GetComponent<Animator>();
+        animator.CrossFadeInFixedTime("ZombieWalk", 0.1f);
     }
 
     // Update is called once per frame

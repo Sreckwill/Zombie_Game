@@ -14,10 +14,14 @@ public class FieldOfView : MonoBehaviour
 
     public bool canSeePlayer;
     Collider[] rangeChecks;
+
+    private Animator animator;
     private void Start()
     {
         playerRef = GameObject.FindGameObjectWithTag("Player");
         StartCoroutine(FOVRoutine());
+        animator = GetComponent<Animator>();
+        animator.CrossFadeInFixedTime("ZombieIdel", 0.1f);
     }
 
     private IEnumerator FOVRoutine()
