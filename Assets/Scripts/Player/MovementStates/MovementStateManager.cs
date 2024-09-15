@@ -34,7 +34,7 @@ public class MovementStateManager : MonoBehaviour
     [HideInInspector] public Animator animator;
     void Start()
     {
-        animator = GetComponentInChildren<Animator>();
+        animator = GetComponent<Animator>();
         controller = GetComponent<CharacterController>();
         SwitchState(Idle);
         

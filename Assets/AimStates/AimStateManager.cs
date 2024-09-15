@@ -1,10 +1,14 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Numerics;
 using UnityEngine;
+using Cinemachine;
+using Vector2 = UnityEngine.Vector2;
+using Vector3 = UnityEngine.Vector3;
 
 
-public class AimStateManager : MonoBehaviour
+public class  AimStateManager : MonoBehaviour
 {
     public AimBaseState currState;
     public HipFireState Hip = new HipFireState();
@@ -16,9 +20,22 @@ public class AimStateManager : MonoBehaviour
 
     [SerializeField] public Transform canFollowPos;
 
+    [HideInInspector] public CinemachineVirtualCamera vCam;
+    public float adsFov = 40;
+    [HideInInspector] public float hipFov;
+    [HideInInspector] public float currFov;
+    public float fovSmoothSpeed=10;
+
+    [SerializeField] public Transform aimPos;
+    [SerializeField] public float aimSmoothSpeed=20;
+    [SerializeField] public LayerMask aimMask;
+    
+
     private void Start()
     {
-        anim = GetComponentInChildren<Animator>();
+        vCam = GetComponentInChildren<CinemachineVirtualCamera>();
+        hipFov = vCam.m_Lens.FieldOfView;
+        anim = GetComponent<Animator>();
         SwitchState(Hip);
     }
 
@@ -27,6 +44,20 @@ public class AimStateManager : MonoBehaviour
         xAxis += Input.GetAxisRaw("Mouse X")*mouseSense;
         yAxis += Input.GetAxisRaw("Mouse Y")*mouseSense;
         yAxis = Math.Clamp(yAxis, -80, 80);
+
+        vCam.m_Lens.FieldOfView = Mathf.Lerp(vCam.m_Lens.FieldOfView, currFov, fovSmoothSpeed * Time.deltaTime);
+
+
+        Vector2 screenCentre = new Vector2(Screen.width / 2, Screen.height / 2);
+        if (Camera.main != null)
+        {
+            Ray ray = Camera.main.ScreenPointToRay(screenCentre);
+            if (Physics.Raycast(ray, out RaycastHit hit, Mathf.Infinity, aimMask))
+            {
+                aimPos.position = Vector3.Lerp(aimPos.position, hit.point, aimSmoothSpeed * Time.deltaTime);
+            }
+        }
+
         currState.UpdateState(this);
     }
 
@@ -41,7 +72,7 @@ public class AimStateManager : MonoBehaviour
     {
         currState = state;
         currState.EnterState(this);
-        currState.EnterState(this);
+        
             
 
     }
