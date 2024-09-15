@@ -2,7 +2,6 @@
 public abstract class ZombieStates 
 {
     public ZombieStateMechine stateMechine;
-
     public ZombieStates(ZombieStateMechine stateMechine)
     {
         this.stateMechine = stateMechine;
