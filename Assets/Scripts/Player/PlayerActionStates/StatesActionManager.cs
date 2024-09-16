@@ -26,6 +26,7 @@ public class StatesActionManager : MonoBehaviour
     {
         // Initialize the state to Default at the start
         SwitchState(Default);
+        currWeapon = GameObject.Find("AK-47");
         Ammo = currWeapon.GetComponent<WeaponAmmo>();
         _audioSource = currWeapon.GetComponent<AudioSource>();
         animator = GetComponent<Animator>();
