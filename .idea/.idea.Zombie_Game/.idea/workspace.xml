@@ -6,8 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="544e84a4-e290-408b-816b-7964827b41c1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Zombie_Game/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Zombie_Game/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AimStates/AimStateManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AimStates/AimStateManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/MovementStates/MovementStateManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/MovementStates/MovementStateManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Characters/Player/PlayerController.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Characters/Player/PlayerController.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Player.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Player.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/AimStates/AimStateManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/AimStates/AimStateManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +21,8 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AimStateManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MovementStates/States/IdleState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Bullet.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.animation.rigging@1.2.1/Editor/Effectors/RigEffectorOverlay.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
@@ -95,6 +98,9 @@
       <workItem from="1726143346056" duration="7926000" />
       <workItem from="1726389571091" duration="53000" />
       <workItem from="1726389631628" duration="469000" />
+      <workItem from="1726400089916" duration="4494000" />
+      <workItem from="1726465588098" duration="90000" />
+      <workItem from="1726465696117" duration="4462000" />
     </task>
     <servers />
   </component>

@@ -14,21 +14,24 @@ public class  AimStateManager : MonoBehaviour
     public HipFireState Hip = new HipFireState();
     public AimState Aim = new AimState();
     
+    
     [SerializeField] private float mouseSense = 1;
     private float xAxis, yAxis;
     [HideInInspector] public Animator anim;
+    [SerializeField] private Transform canFollowPos;
 
-    [SerializeField] public Transform canFollowPos;
-
+    
     [HideInInspector] public CinemachineVirtualCamera vCam;
     public float adsFov = 40;
     [HideInInspector] public float hipFov;
     [HideInInspector] public float currFov;
     public float fovSmoothSpeed=10;
 
-    [SerializeField] public Transform aimPos;
-    [SerializeField] public float aimSmoothSpeed=20;
-    [SerializeField] public LayerMask aimMask;
+    
+    public Transform aimPos;
+    [HideInInspector] public Vector3 actualAimPos;
+    [SerializeField] private float aimSmoothSpeed=20;
+    [SerializeField] private LayerMask aimMask;
     
 
     private void Start()
