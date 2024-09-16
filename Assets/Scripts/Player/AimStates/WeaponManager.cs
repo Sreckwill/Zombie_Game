@@ -21,14 +21,14 @@ public class WeaponManager : MonoBehaviour
     [SerializeField] private AudioClip gunShot;
     private AudioSource audioSource;
     private WeaponAmmo weaponAmmo;
-    private StatesActionManager _statesActionManager;
+    private ActionStateManager _statesActionManager;
     
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
         aimStateManager = GetComponentInParent<AimStateManager>();
         weaponAmmo = GetComponent<WeaponAmmo>();
-        _statesActionManager = GetComponentInParent<StatesActionManager>();
+        _statesActionManager = GetComponentInParent<ActionStateManager>();
         fireRateTimer = fireRate;
     }
 

@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Animations.Rigging;
 
-public class StatesActionManager : MonoBehaviour
+public class ActionStateManager : MonoBehaviour
 {
     // The current state of the action manager
-    [HideInInspector]public BaseActionState currState;
+    [HideInInspector]public ActionBaseState currState;
 
 // Instances of different states
     public ReloadState Reload = new ReloadState();
@@ -23,13 +23,13 @@ public class StatesActionManager : MonoBehaviour
     
 
     void Start()
-    {
+    {animator = GetComponent<Animator>();
         // Initialize the state to Default at the start
         SwitchState(Default);
-        currWeapon = GameObject.Find("AK-47");
+          currWeapon = GameObject.Find("AK-47");
         Ammo = currWeapon.GetComponent<WeaponAmmo>();
         _audioSource = currWeapon.GetComponent<AudioSource>();
-        animator = GetComponent<Animator>();
+        
     }
 
     void Update()
@@ -39,7 +39,7 @@ public class StatesActionManager : MonoBehaviour
         
     }
 
-    public void SwitchState(BaseActionState state)
+    public void SwitchState(ActionBaseState state)
     {
         // Switch to the new state
         currState = state;

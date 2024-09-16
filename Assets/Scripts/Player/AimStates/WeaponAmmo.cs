@@ -18,11 +18,7 @@ public class WeaponAmmo : MonoBehaviour
         currAmmo = clipSize;
     }
 
-    private void Update()
-    {
-        if(Input.GetKeyDown(KeyCode.R))Reload();
-    }
-
+   
     public void Reload()
     {
         // Check if there is enough extra ammo to fully reload the clip
