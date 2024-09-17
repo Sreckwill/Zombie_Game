@@ -22,13 +22,26 @@ public class WeaponManager : MonoBehaviour
     private AudioSource audioSource;
     private WeaponAmmo weaponAmmo;
     private ActionStateManager _statesActionManager;
+
+    private WeaponRecoil recoil;
+
+    [SerializeField] private Light MuzzleFlashLight;
+    [SerializeField] ParticleSystem MuzzleFlashParticles;
+    [SerializeField]private float lightIntensity;
+    [SerializeField] private float lightReturnSpeed=20;
     
     void Start()
     {
+        recoil = GetComponent<WeaponRecoil>();
         audioSource = GetComponent<AudioSource>();
         aimStateManager = GetComponentInParent<AimStateManager>();
         weaponAmmo = GetComponent<WeaponAmmo>();
         _statesActionManager = GetComponentInParent<ActionStateManager>();
+        MuzzleFlashLight = GetComponentInChildren<Light>();
+        lightIntensity = MuzzleFlashLight.intensity;
+        MuzzleFlashLight.intensity = 0;
+        MuzzleFlashParticles = GetComponentInChildren<ParticleSystem>();
+        
         fireRateTimer = fireRate;
     }
 
@@ -37,6 +50,7 @@ public class WeaponManager : MonoBehaviour
     {
         if(ShouldFire())Fire();
         Debug.Log(weaponAmmo.currAmmo);
+        MuzzleFlashLight.intensity = Mathf.Lerp(MuzzleFlashLight.intensity, 0, lightReturnSpeed * Time.deltaTime);
     }
 
     bool ShouldFire()
@@ -51,12 +65,14 @@ public class WeaponManager : MonoBehaviour
 
     }
 
-    // ReSharper disable Unity.PerformanceAnalysis
+   
     void Fire()
     {
         fireRateTimer = 0;
         barrelPos.LookAt(aimStateManager.aimPos);
         audioSource.PlayOneShot(gunShot);
+        recoil.TriggerRecoil();
+        
         weaponAmmo.currAmmo--;
         for (int i = 0; i < bulletPerShot; i++)
         {
@@ -64,6 +80,14 @@ public class WeaponManager : MonoBehaviour
             Rigidbody rb = currentBullet.GetComponent<Rigidbody>();
             rb.AddForce(barrelPos.forward*bullectVelcoity,ForceMode.Impulse);
         }
-        Debug.Log("Fire");
+        TriggerMuzzleFlash();
+        
+    }
+
+    void TriggerMuzzleFlash()
+    {
+        MuzzleFlashParticles.Play();
+        MuzzleFlashLight.intensity = lightIntensity;
     }
 }
+

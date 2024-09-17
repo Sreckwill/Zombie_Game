@@ -6,56 +6,33 @@
   <component name="ChangeListManager">
     <list default="true" id="544e84a4-e290-408b-816b-7964827b41c1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Zombie_Game/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Zombie_Game/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AutoSave/AutoSave/Player Sep 19-16pm Sep 19-18pm.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AutoSave/AutoSave/Player Sep 19-16pm Sep 19-18pm.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AutoSave/AutoSave/Player Sep 19-16pm Sep 19-26pm.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AutoSave/AutoSave/Player Sep 19-16pm Sep 19-26pm.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AutoSave/AutoSave/Player Sep 19-16pm Sep 19-27pm.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AutoSave/AutoSave/Player Sep 19-16pm Sep 19-27pm.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AutoSave/AutoSave/Player Sep 19-16pm Sep 19-30pm.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AutoSave/AutoSave/Player Sep 19-16pm Sep 19-30pm.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AutoSave/AutoSave/Player Sep 19-16pm Sep 19-32pm.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AutoSave/AutoSave/Player Sep 19-16pm Sep 19-32pm.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AutoSave/AutoSave/Player Sep 19-16pm Sep 19-38pm.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AutoSave/AutoSave/Player Sep 19-16pm Sep 19-38pm.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AutoSave/AutoSave/Player Sep 19-16pm Sep 19-40pm.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AutoSave/AutoSave/Player Sep 19-16pm Sep 19-40pm.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AutoSave/AutoSave/Player Sep 19-16pm Sep 19-42pm.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AutoSave/AutoSave/Player Sep 19-16pm Sep 19-42pm.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AutoSave/AutoSave/Player Sep 19-16pm Sep 19-46pm.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AutoSave/AutoSave/Player Sep 19-16pm Sep 19-46pm.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AutoSave/AutoSave/Player Sep 19-16pm Sep 19-47pm.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AutoSave/AutoSave/Player Sep 19-16pm Sep 19-47pm.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AutoSave/AutoSave/Player Sep 19-16pm Sep 19-52pm.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AutoSave/AutoSave/Player Sep 19-16pm Sep 19-52pm.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AutoSave/AutoSave/Player Sep 19-16pm Sep 19-53pm.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AutoSave/AutoSave/Player Sep 19-16pm Sep 19-53pm.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AutoSave/AutoSave/Player Sep 19-16pm Sep 19-54pm.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AutoSave/AutoSave/Player Sep 19-16pm Sep 19-54pm.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AutoSave/AutoSave/Player Sep 19-16pm Sep 19-55pm.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AutoSave/AutoSave/Player Sep 19-16pm Sep 19-55pm.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AutoSave/AutoSave/Player Sep 19-16pm Sep 19-56pm.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AutoSave/AutoSave/Player Sep 19-16pm Sep 19-56pm.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AutoSave/AutoSave/Player Sep 19-16pm Sep 19-57pm.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AutoSave/AutoSave/Player Sep 19-16pm Sep 19-57pm.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AutoSave/AutoSave/Player Sep 19-16pm Sep 19-58pm.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AutoSave/AutoSave/Player Sep 19-16pm Sep 19-58pm.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AutoSave/Player Sep 19-16pm.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AutoSave/Player Sep 19-16pm.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AutoSave.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AutoSave/AutoSave.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AutoSave/AutoSave/Player Sep 19-16pm Sep 21-27pm.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AutoSave/AutoSave/Player Sep 19-16pm Sep 21-27pm.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AutoSave/AutoSave/Player Sep 19-16pm Sep 21-38pm.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AutoSave/AutoSave/Player Sep 19-16pm Sep 21-38pm.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AutoSave/AutoSave/Player Sep 19-16pm Sep 21-48pm.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AutoSave/AutoSave/Player Sep 19-16pm Sep 21-48pm.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AutoSave/AutoSave/Player Sep 19-16pm Sep 21-49pm.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AutoSave/AutoSave/Player Sep 19-16pm Sep 21-49pm.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AutoSave/AutoSave/Player Sep 19-16pm Sep 21-52pm.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AutoSave/AutoSave/Player Sep 19-16pm Sep 21-52pm.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AutoSave/AutoSave/Player Sep 19-16pm Sep 21-53pm.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AutoSave/AutoSave/Player Sep 19-16pm Sep 21-53pm.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AutoSave/Player Sep 19-16pm.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AutoSave/Player Sep 19-16pm.unity.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Player.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Player.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/AimStates/WeaponManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/AimStates/WeaponManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerActionStates/BaseActionState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerActionStates/BaseActionState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerActionStates/DefaultState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerActionStates/DefaultState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerActionStates/ReloadState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerActionStates/ReloadState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerActionStates/StatesActionManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerActionStates/StatesActionManager.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/WeaponRecoil.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WeaponRecoil.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DpaMonitoringSettings">
+    <option name="autoShow" value="false" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -72,20 +49,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Attach to Unity Editor.Attach to Unity Editor.executor": "Debug",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Attach to Unity Editor.Attach to Unity Editor.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.11f1\Editor\Unity.exe" />
@@ -113,10 +90,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="17180">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="17180" />
+      <option name="pid" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -147,7 +124,9 @@
       <workItem from="1726501494741" duration="1000" />
       <workItem from="1726501498059" duration="727000" />
       <workItem from="1726503116373" duration="868000" />
-      <workItem from="1726504216312" duration="1517000" />
+      <workItem from="1726504216312" duration="2592000" />
+      <workItem from="1726562130227" duration="35000" />
+      <workItem from="1726562173627" duration="2167000" />
     </task>
     <servers />
   </component>
@@ -161,6 +140,17 @@
     <option name="unityProjectFolder" value="true" />
   </component>
   <component name="UnityUnitTestConfiguration" currentTestLauncher="Both" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
