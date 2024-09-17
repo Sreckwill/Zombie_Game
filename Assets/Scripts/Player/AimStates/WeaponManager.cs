@@ -89,7 +89,7 @@ public class WeaponManager : MonoBehaviour
 
     void TriggerMuzzleFlash()
     {
-        MuzzleFlashParticles.Play();
+        MuzzleFlashParticles?.Play();
         MuzzleFlashLight.intensity = lightIntensity;
     }
 }
