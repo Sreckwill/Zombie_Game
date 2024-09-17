@@ -5,26 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="544e84a4-e290-408b-816b-7964827b41c1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Zombie_Game/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Zombie_Game/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AutoSave.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AutoSave/AutoSave.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AutoSave/AutoSave/Player Sep 19-16pm Sep 21-27pm.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AutoSave/AutoSave/Player Sep 19-16pm Sep 21-27pm.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AutoSave/AutoSave/Player Sep 19-16pm Sep 21-38pm.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AutoSave/AutoSave/Player Sep 19-16pm Sep 21-38pm.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AutoSave/AutoSave/Player Sep 19-16pm Sep 21-48pm.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AutoSave/AutoSave/Player Sep 19-16pm Sep 21-48pm.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AutoSave/AutoSave/Player Sep 19-16pm Sep 21-49pm.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AutoSave/AutoSave/Player Sep 19-16pm Sep 21-49pm.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AutoSave/AutoSave/Player Sep 19-16pm Sep 21-52pm.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AutoSave/AutoSave/Player Sep 19-16pm Sep 21-52pm.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AutoSave/AutoSave/Player Sep 19-16pm Sep 21-53pm.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AutoSave/AutoSave/Player Sep 19-16pm Sep 21-53pm.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AutoSave/Player Sep 19-16pm.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AutoSave/Player Sep 19-16pm.unity.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Player.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Player.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/AimStates/WeaponManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/AimStates/WeaponManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WeaponRecoil.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WeaponRecoil.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +21,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerActionStates/ActionStateManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/WeaponBloom.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.animation.rigging@1.2.1/Editor/Effectors/RigEffectorOverlay.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
@@ -127,6 +110,7 @@
       <workItem from="1726504216312" duration="2592000" />
       <workItem from="1726562130227" duration="35000" />
       <workItem from="1726562173627" duration="2167000" />
+      <workItem from="1726564501618" duration="4421000" />
     </task>
     <servers />
   </component>
