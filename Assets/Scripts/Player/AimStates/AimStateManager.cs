@@ -32,10 +32,22 @@ public class  AimStateManager : MonoBehaviour
     [HideInInspector] public Vector3 actualAimPos;
     [SerializeField] private float aimSmoothSpeed=20;
     [SerializeField] private LayerMask aimMask;
+
+
+    private float xFollowPos;
+    private float yFollowPos, originalYPos;
+    [SerializeField] private float crouchCamHeight=0.6f;
+    [SerializeField] private float shoulderSwapSpeed = 10;
+    private MovementStateManager movementState;
+    
     
 
     private void Start()
     {
+        movementState = GetComponent<MovementStateManager>();
+        xFollowPos = canFollowPos.localPosition.x;
+        originalYPos = canFollowPos.localPosition.y;
+        yFollowPos = originalYPos;
         vCam = GetComponentInChildren<CinemachineVirtualCamera>();
         hipFov = vCam.m_Lens.FieldOfView;
         anim = GetComponent<Animator>();
@@ -52,14 +64,15 @@ public class  AimStateManager : MonoBehaviour
 
 
         Vector2 screenCentre = new Vector2(Screen.width / 2, Screen.height / 2);
-        if (Camera.main != null)
-        {
+      
+     
             Ray ray = Camera.main.ScreenPointToRay(screenCentre);
             if (Physics.Raycast(ray, out RaycastHit hit, Mathf.Infinity, aimMask))
             {
                 aimPos.position = Vector3.Lerp(aimPos.position, hit.point, aimSmoothSpeed * Time.deltaTime);
             }
-        }
+        
+        CameraLeftAndRightMovment();
 
         currState.UpdateState(this);
     }
@@ -75,8 +88,29 @@ public class  AimStateManager : MonoBehaviour
     {
         currState = state;
         currState.EnterState(this);
+    }
+
+    void CameraLeftAndRightMovment()
+    {
+
+        if (Input.GetKeyDown(KeyCode.LeftAlt))
+        {
+           
+            xFollowPos = -xFollowPos;
+        }
+
+        if (movementState.currentState == movementState.Crouch)
+        {
+            yFollowPos = crouchCamHeight;
+        }
+        else
+        {
+            yFollowPos = originalYPos;
+        }
         
-            
+        Vector3 newFollowPos = new Vector3(xFollowPos, yFollowPos, canFollowPos.localPosition.z);
+        
+        canFollowPos.localPosition = Vector3.Lerp(canFollowPos.localPosition, newFollowPos, shoulderSwapSpeed * Time.deltaTime);
 
     }
 }
