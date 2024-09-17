@@ -30,6 +30,8 @@ public class ZombieStateMechine : MonoBehaviour
     public bool waitingAtPoint;
 
 
+    public int damage;
+
     private ZombieStates currentState;
     public ZombieFOVState zombieFOVState;
     public ZombieMovingState zombieMovingState;
@@ -80,6 +82,31 @@ public class ZombieStateMechine : MonoBehaviour
         {
             Gizmos.color = Color.green;
             Gizmos.DrawLine(transform.position, rangeChecks[0].transform.position);
+        }
+    }
+
+    public float damageInterval = 1f; // Interval between damage in seconds
+    private bool canDamage = true;
+
+
+    private void OnCollisionStay(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            if (canDamage)
+            {
+                StartCoroutine(ApplyDamageOverTime(collision.gameObject.GetComponent<Health>()));
+            }
+        }
+    }
+    IEnumerator ApplyDamageOverTime(Health playerHealth)
+    {
+        if (playerHealth != null)
+        {
+            canDamage = false; // Prevent multiple calls while coroutine is running
+            playerHealth.Damage(damage); // Apply the damage
+            yield return new WaitForSeconds(damageInterval); // Wait for the interval before applying damage again
+            canDamage = true; // Allow damage to be applied again
         }
     }
 
