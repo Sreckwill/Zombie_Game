@@ -1,4 +1,4 @@
-# Project Name
+# Zombie Shooter
 
 ## Description
 Briefly describe what the project is about, its goals, and the technologies you are using.
